@@ -1,0 +1,15 @@
+---
+configuration:
+  provider: github-provider
+  type: github
+checks:
+  - id: validate-branch-name
+    name: check if branch start with FIX-.
+    severity: High
+    steps:
+      - path: env.GITHUB_HEAD_REF
+        condition: equal
+        value: true
+        utility: regex
+        utilityProps:
+          - "/^FIX-/"
