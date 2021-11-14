@@ -46,4 +46,4 @@ jobs:
           checks_path: ./checks
 ```
 
-This is a test repository.
+This is a test repository!
